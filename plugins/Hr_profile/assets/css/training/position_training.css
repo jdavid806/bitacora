@@ -1,0 +1,22 @@
+.question.form-group {
+    padding: 25px;
+    background: #FDFDFD;
+    border: 1px solid #F1F1F1;
+}
+
+.question .required {
+    margin-top: 0;
+}
+
+.question_update {
+    margin-left: 15px;
+}
+
+.note {
+    background: #FFFFE6;
+    color: #323a45;
+    padding: 5px 10px 5px 10px;
+    margin-bottom: 8px;
+    border: 1px solid #DACD83;
+    border-radius: 2px;
+}

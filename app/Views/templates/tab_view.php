@@ -1,0 +1,1 @@
+<li class="template-tabs"><a role="presentation" data-bs-toggle="tab" href="<?php echo echo_uri("templates/different_language_form/" . $tab_data->id); ?>" data-reload="1" data-bs-target="#template-form-default"><?php echo ucfirst($tab_data->language_); ?></a></li>

@@ -1,0 +1,143 @@
+.table {
+	color: #4e5e6a;
+}
+
+.panel_s {
+    background-color: none;
+    border: none;
+    -webkit-box-shadow: 0 1px 15px 1px rgb(90 90 90 / 8%);
+    box-shadow: 0 1px 15px 1px rgb(90 90 90 / 8%);
+}
+
+.panel_s .panel-body {
+    background: #fff;
+    border: 1px solid #dce1ef;
+    border-radius: 4px;
+    padding: 20px;
+    position: relative;
+}
+
+.dataTables_length {
+    float: left;
+    margin-right: 5px;
+}
+.nav-link{
+    color: #20446f !important;
+}
+.table>:not(:last-child)>:last-child>* {
+    border-bottom-color: #eef6f9;
+}
+
+#tab_receipt_delivery .select2, #tab_order_return .select2 {
+    width: 100%;
+}
+
+#tab_order_return textarea {
+    height: 75px;
+}
+
+img.images_w_table {
+    width: 73px;
+    height: 73px;
+}
+
+.select2 {
+    width: 100%;
+}
+
+ .signature-pad--body{
+    border-radius: 4px;
+    position: relative;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    border: 1px solid #c0cbda;
+  }
+
+  .color-7988a2{
+    color:#7988a2,
+  }
+
+  .goal-progress {
+    text-align: center;
+    position: relative;
+}
+
+.goal-percent {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 50px;
+}
+
+table .goal-progress {
+    display: inline-block;
+}
+
+table .goal-percent {
+    font-size: 10px;
+    text-align: center;
+    left: 1px;
+    top: 22px;
+    line-height: 0;
+}
+.datepicker.datepicker-dropdown.dropdown-menu.datepicker-orient-left.datepicker-orient-bottom {
+    z-index: 10000 !important;
+}
+.datepicker.datepicker-dropdown.dropdown-menu.datepicker-orient-left.datepicker-orient-top {
+    z-index: 10000 !important;
+}
+img.img-responsive {
+    width: 150px;
+}
+
+.list-group-item1{
+    border: none;
+    padding-left: 15px ;
+    padding-right: 15px ;
+}
+
+.list-group-item1 {
+    position: relative;
+    display: block;
+    padding: 0.5rem 1rem;
+    color: #212529;
+    text-decoration: none;
+    background-color: #fff;
+}
+
+.resignation-procedures-modal1 {
+    padding: 0px 10px;
+}
+.width-680-important{
+    width:680px !important;
+}
+
+.width-100-height-55{
+    width:100%;height:55px;
+}
+.height-27{
+    height:27px;
+}
+.height-28{
+    height:28px;
+}
+.width-25-height-27{
+    width:25%;
+    height:27px;
+}
+.width-25-height-27-text-align{
+    width:25%;
+    height:27px;
+    text-align:left;
+}
+.width-25-height-28{
+    width:25%;
+    height:28px;
+}
+.text-align-left{
+    text-align: left;
+}

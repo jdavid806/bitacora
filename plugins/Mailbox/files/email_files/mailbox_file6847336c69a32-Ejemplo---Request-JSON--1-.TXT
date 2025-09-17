@@ -1,0 +1,68 @@
+[{
+ 
+"numero_orden":"1-4567",
+"id_usuario": 1,
+"urgente": "true",
+"embarazada": true,
+"comentario": "Prueba Integración API",
+"numero_autorizacion": "123456",
+"numero_admision": "123",
+"habitacion": "45",
+"fecha": "2024-10-11",
+"paciente":
+{
+"codigo_tipo_identificacion": "1",
+"identificacion": "02020202202",
+"nombres": "Angel",
+"apellidos": "Perez",
+"celular": "8099949939",
+"telefono": "8296548753",
+"direccion": "Calle Flor de Camelia #8, Mil Flores ",
+"correo_electronico": "Angelperez@gmail.com",
+"numero_afiliado": "1123",
+"nss": "646465",
+"sector": "Mil Flores",
+"numero_historia": "20316161617",
+"fecha_nacimiento": "1998-02-11",
+"codigo_convenio": "SF01",
+"codigo_plan": "SF01",
+"codigo_sexo": "M",
+"codigo_tipo_paciente": "A",
+"codigo_tipo_sangre": "A+",
+"codigo_municipio": "SDE",
+"codigo_nacionalidad": "DOM",
+"Convenio": "ARS FUTURO"
+},
+"sucursal":
+{
+    "codigo": "0001",
+    "nombre": "Demo LabPlus Onlines"
+ },
+"medico":
+{
+"codigo": "400318",
+"nombres" : "PEDRO",
+"apellidos" : "RODRIGUEZ",
+"especialidad" : "GENERAL",
+"email" : "juan.martinez@gmail.com"
+},
+"analiticas":
+[
+{
+"codigo": "HC",
+"descripcion": "HEMOGRAMA"
+},
+{
+    "codigo": "05241", 
+    "descripcion": "HEMATOCRITO Y HEMAGLOBINA"
+},
+{
+    "codigo": "0563345", 
+    "descripcion": "VITAMINA D"
+},
+{
+    "codigo": "0545389", 
+    "descripcion": "17 - CETOSTEROIDES"
+}
+]
+}]

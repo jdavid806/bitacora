@@ -1,0 +1,249 @@
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: none;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+#main-container {
+    padding: 10px;
+    height: 100vh;
+}
+
+#navbar {
+    background: #d9d9d9;
+}
+
+.dropdown-toggle::after {
+    display: none;
+}
+
+.chat-list-item {
+    background: white;
+    cursor: pointer;
+}
+
+.chat-list-item:hover {
+    background: hsl(0, 0%, 95%);
+}
+
+.chat-list-item:active {
+    background: hsl(0, 0%, 85%);
+}
+
+.chat-list-item.active {
+    background: hsl(0, 0%, 90%);
+}
+
+.chat-list-item .chat-details {
+    width: 60%;
+}
+
+.chat-list-item.unread .name,
+.chat-list-item.unread .last-message {
+    font-weight: bold;
+}
+
+.chat-list-item .last-message,
+#message-area #navbar #details {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#message-area {
+    border-left: 1px solid white;
+}
+
+#message-area .overlay {
+    background: hsl(0, 0%, 80%);
+}
+
+#input-area {
+    background: hsl(0, 0%, 95%);
+}
+
+#input-area #input {
+    outline: none;
+}
+
+.message-item {
+    position: relative;
+    max-width: 75%;
+    word-break: break-word;
+}
+
+.message-item.self {
+    background: #dcf8c6 !important;
+}
+
+.message-item .number {
+    color: #1f7aec !important;
+}
+
+.message-item .options {
+    position: absolute;
+    top: 0;
+    right: -3px;
+    opacity: 0;
+    transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+}
+
+.message-item:hover .options {
+    opacity: 1;
+    right: 0;
+}
+
+#messages {
+    flex: 1 !important;
+    background: hsl(0, 0%, 80%);
+    overflow: auto;
+}
+
+#profile-settings {
+    position: absolute;
+    top: 0;
+    left: -110%;
+    background: hsl(0, 0%, 95%);
+    transition: all 0.2s ease-in;
+    -moz-transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+}
+
+#profile-pic {
+    cursor: pointer;
+    position: relative;
+    width: 200px;
+}
+
+.profile-input {
+    border-bottom: 2px solid transparent !important;
+    outline: none;
+}
+
+.profile-input:focus {
+    border-bottom-color: hsl(0, 0%, 50%) !important;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+.max-width-60 {
+    width: 60%;
+}
+
+.bg-custom {
+    background: #b1ebaf;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.selected-interaction {
+    background-color: #e0e0e0;
+}
+
+.bg-badge {
+    background-color: #25D366;
+}
+
+.custom_message {
+    float: right;
+    background: #ebebeb;
+    max-width: 50%;
+}
+
+#emoji-picker-container {
+    position: absolute;
+    bottom: -14px;
+    left: 466px;
+}
+
+/* menu dropdown */
+
+/* Custom styles for the submenu */
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    margin-top: -5px;
+    border-radius: 0.25rem;
+}
+
+.dropdown-submenu:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-submenu>a::after {
+    content: "▶";
+    float: right;
+    margin-left: 10px;
+    font-size: 0.8rem;
+}
+
+/* Align submenus with right-side padding */
+.dropdown-submenu .dropdown-menu {
+    margin-left: 0;
+    margin-right: -1.5rem;
+    left: 100%;
+
+}
+
+#ai-dropdown::after {
+    display: none !important;
+}
+
+.dropdown-submenu .dropdown-menu {
+    top: auto;
+    /* Reset top positioning */
+    bottom: 0%;
+    /* Position it above the parent */
+    margin-bottom: -5px;
+    /* Adjust spacing between parent and submenu */
+}
+
+.custom-dropdown-menu {
+    max-height: 200px;
+    /* Set your desired fixed height here */
+    overflow-y: auto;
+    /* Enable vertical scrolling if content exceeds max-height */
+}
+
+.custom-send-btn:hover {
+    background-color: #f8f9fa;
+    /* Ensure background color does not change on hover */
+}
+
+.custom-textarea {
+    width: 100%;
+    height: auto;
+    padding: 0.375rem 0.75rem;
+    border: 1px solid #ced4da;
+    border-radius: 0.50rem;
+    resize: vertical;
+}
+
+.custom_width {
+    max-width: 50%;
+}

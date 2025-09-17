@@ -1,0 +1,9 @@
+Desarrollo
+URL: api.staging.osigudr
+Username: do-cenode-1
+Pass: Koneksi2021.
+
+Producción:
+URL: api.osigudr
+Username: do-cenode-1
+Pass:  cb6d5ef3-b328-4c6f-a152-30f764f886c7

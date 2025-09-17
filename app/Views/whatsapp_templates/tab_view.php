@@ -1,0 +1,1 @@
+<li class="whatsapp-template-tabs"><a role="presentation" data-bs-toggle="tab" href="<?php echo echo_uri("templates/different_language_form/" . $tab_data->id); ?>" data-reload="1" data-bs-target="#whatsapp-template-form-default"><?php echo ucfirst($tab_data->language); ?></a></li>

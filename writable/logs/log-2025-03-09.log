@@ -1,0 +1,616 @@
+ERROR - 2025-03-09 00:03:03 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 00:03:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 00:09:03 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 00:09:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 00:15:04 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 00:15:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 00:21:03 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 00:21:06 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 00:27:03 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 00:27:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 00:33:03 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 00:33:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 00:39:03 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 00:39:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 00:45:03 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 00:45:06 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 00:51:03 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 00:51:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 00:57:04 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 00:57:08 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 01:03:03 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 01:03:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 01:08:04 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 01:08:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 01:14:04 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 01:14:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 01:20:04 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 01:20:08 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 01:26:03 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 01:26:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 01:31:04 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 01:31:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 01:37:03 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 01:37:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 01:42:03 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 01:42:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 01:48:03 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 01:48:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 01:54:03 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 01:54:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 02:00:06 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 02:00:10 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 02:06:03 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 02:06:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 02:11:03 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 02:11:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:269
+ERROR - 2025-03-09 02:11:08 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 02:17:04 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 02:17:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 02:23:03 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 02:23:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 02:29:03 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 02:29:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 02:35:03 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 02:35:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 02:40:03 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 02:40:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 02:46:03 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 02:46:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 02:52:03 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 02:52:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 02:58:03 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 02:58:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 03:04:04 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 03:04:08 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 03:10:03 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 03:10:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 03:15:03 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 03:15:08 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:269
+ERROR - 2025-03-09 03:15:09 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 03:21:04 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 03:21:08 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 03:27:03 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 03:27:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 03:27:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:269
+ERROR - 2025-03-09 03:32:03 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 03:32:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+CRITICAL - 2025-03-09 03:33:02 --> ErrorException: Trying to access array offset on null
+[Method: GET, Route: public_routes/get_demo_available_hours]
+in APPPATH/Controllers/Public_routes.php on line 358.
+ 1 APPPATH/Controllers/Public_routes.php(358): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on null', '/home2/appnaros/public_html/sistema/app/Controllers/Public_routes.php', 358)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Public_routes->get_demo_available_hours()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Public_routes))
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(149): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-09 03:33:51 --> ErrorException: Trying to access array offset on null
+[Method: GET, Route: public_routes/get_demo_available_hours]
+in APPPATH/Controllers/Public_routes.php on line 358.
+ 1 APPPATH/Controllers/Public_routes.php(358): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on null', '/home2/appnaros/public_html/sistema/app/Controllers/Public_routes.php', 358)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Public_routes->get_demo_available_hours()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Public_routes))
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(149): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-03-09 03:38:03 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 03:38:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 03:44:03 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 03:44:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+CRITICAL - 2025-03-09 03:47:41 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "send_reminder_by_wpp
+"
+[Method: GET, Route: public_routes/send_reminder_by_wpp%0A]
+in SYSTEMPATH/Router/Router.php on line 737.
+ 1 SYSTEMPATH/Router/Router.php(204): CodeIgniter\Router\Router->checkDisallowedChars('public_routes/send_reminder_by_wpp
+')
+ 2 SYSTEMPATH/CodeIgniter.php(834): CodeIgniter\Router\Router->handle('public_routes/send_reminder_by_wpp
+')
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(149): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-09 03:47:45 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "send_reminder_by_wpp
+"
+[Method: POST, Route: public_routes/send_reminder_by_wpp%0A]
+in SYSTEMPATH/Router/Router.php on line 737.
+ 1 SYSTEMPATH/Router/Router.php(204): CodeIgniter\Router\Router->checkDisallowedChars('public_routes/send_reminder_by_wpp
+')
+ 2 SYSTEMPATH/CodeIgniter.php(834): CodeIgniter\Router\Router->handle('public_routes/send_reminder_by_wpp
+')
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(149): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-03-09 03:50:03 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 03:50:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+CRITICAL - 2025-03-09 03:50:07 --> ErrorException: Trying to access array offset on null
+[Method: GET, Route: public_routes/get_demo_available_hours]
+in APPPATH/Controllers/Public_routes.php on line 358.
+ 1 APPPATH/Controllers/Public_routes.php(358): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on null', '/home2/appnaros/public_html/sistema/app/Controllers/Public_routes.php', 358)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Public_routes->get_demo_available_hours()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Public_routes))
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(149): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-09 03:50:15 --> ErrorException: Trying to access array offset on null
+[Method: GET, Route: public_routes/get_demo_available_hours]
+in APPPATH/Controllers/Public_routes.php on line 358.
+ 1 APPPATH/Controllers/Public_routes.php(358): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on null', '/home2/appnaros/public_html/sistema/app/Controllers/Public_routes.php', 358)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Public_routes->get_demo_available_hours()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Public_routes))
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(149): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-09 03:50:19 --> ErrorException: Trying to access array offset on null
+[Method: GET, Route: public_routes/get_demo_available_hours]
+in APPPATH/Controllers/Public_routes.php on line 358.
+ 1 APPPATH/Controllers/Public_routes.php(358): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on null', '/home2/appnaros/public_html/sistema/app/Controllers/Public_routes.php', 358)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Public_routes->get_demo_available_hours()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Public_routes))
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(149): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-09 03:50:38 --> ErrorException: Trying to access array offset on null
+[Method: GET, Route: public_routes/get_demo_available_hours]
+in APPPATH/Controllers/Public_routes.php on line 358.
+ 1 APPPATH/Controllers/Public_routes.php(358): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on null', '/home2/appnaros/public_html/sistema/app/Controllers/Public_routes.php', 358)
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Public_routes->get_demo_available_hours()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Public_routes))
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(149): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-03-09 03:56:03 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 03:56:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 04:02:03 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 04:02:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 04:07:06 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 04:07:10 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+CRITICAL - 2025-03-09 04:10:10 --> DateInvalidTimeZoneException: DateTimeZone::__construct(): Unknown or bad timezone ()
+[Method: POST, Route: public_routes/get_demo_available_hours]
+in APPPATH/Controllers/Public_routes.php on line 362.
+ 1 APPPATH/Controllers/Public_routes.php(362): DateTimeZone->__construct('')
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Public_routes->get_demo_available_hours()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Public_routes))
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(149): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-09 04:10:23 --> DateInvalidTimeZoneException: DateTimeZone::__construct(): Unknown or bad timezone ()
+[Method: POST, Route: public_routes/get_demo_available_hours]
+in APPPATH/Controllers/Public_routes.php on line 362.
+ 1 APPPATH/Controllers/Public_routes.php(362): DateTimeZone->__construct('')
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Public_routes->get_demo_available_hours()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Public_routes))
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(149): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-03-09 04:13:03 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 04:13:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 04:18:04 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 04:18:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 04:24:03 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 04:24:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 04:30:03 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 04:30:08 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 04:35:04 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 04:35:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 04:41:04 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 04:41:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 04:47:03 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 04:47:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 04:53:03 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 04:53:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 04:59:03 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 04:59:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 05:04:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 05:04:11 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 05:10:04 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 05:10:08 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 05:15:04 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 05:15:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 05:21:04 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 05:21:08 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 05:27:03 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 05:27:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 05:32:03 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 05:32:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 05:38:03 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 05:38:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 05:44:04 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 05:44:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 05:50:03 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 05:50:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 05:56:03 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 05:56:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 06:02:03 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 06:02:06 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 06:08:03 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 06:08:06 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 06:14:04 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 06:14:08 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 06:20:03 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 06:20:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 06:25:03 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 06:25:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 06:31:03 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 06:31:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 06:36:03 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 06:36:06 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 06:42:03 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 06:42:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 06:48:03 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 06:48:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 06:54:03 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 06:54:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 07:00:04 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 07:00:08 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 07:06:04 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 07:06:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 07:12:04 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 07:12:09 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 07:18:04 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 07:18:08 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 07:24:03 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 07:24:06 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 07:29:03 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 07:29:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 07:35:04 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 07:35:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 07:41:03 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 07:41:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 07:46:03 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 07:46:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 07:52:04 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 07:52:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 07:58:03 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 07:58:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 08:04:03 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 08:04:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 08:10:03 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 08:10:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 08:16:03 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 08:16:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 08:22:04 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 08:22:08 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 08:28:03 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 08:28:06 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 08:34:02 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 08:34:06 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 08:40:03 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 08:40:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 08:46:03 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 08:46:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 08:52:03 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 08:52:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 08:58:03 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 08:58:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 09:04:04 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 09:04:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 09:10:04 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 09:10:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 09:16:04 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 09:16:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 09:22:04 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 09:22:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 09:28:04 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 09:28:08 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 09:34:03 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 09:34:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 09:40:04 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 09:40:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 09:46:04 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 09:46:08 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 09:52:04 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 09:52:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 09:58:03 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 09:58:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 10:04:04 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 10:04:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 10:10:02 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 10:10:06 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 10:15:03 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 10:15:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 10:21:04 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 10:21:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 10:27:03 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 10:27:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 10:32:04 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 10:32:08 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 10:38:03 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 10:38:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 10:44:03 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 10:44:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 10:50:03 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 10:50:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 10:55:04 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 10:55:08 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 11:01:03 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 11:01:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 11:06:04 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 11:06:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 11:12:03 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 11:12:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 11:18:03 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 11:18:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 11:24:03 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 11:24:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 11:30:03 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 11:30:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 11:35:04 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 11:35:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 11:41:03 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 11:41:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 11:46:03 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 11:46:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 11:52:03 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 11:52:06 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 11:58:03 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 11:58:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 12:04:03 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 12:04:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 12:10:03 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 12:10:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 12:16:03 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 12:16:08 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:269
+ERROR - 2025-03-09 12:16:09 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 12:21:04 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 12:21:08 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 12:27:03 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 12:27:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 12:33:03 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 12:33:06 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 12:39:04 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 12:39:08 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 12:45:03 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 12:45:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 12:51:04 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 12:51:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 12:57:02 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 12:57:06 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 13:02:04 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 13:02:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 13:08:03 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 13:08:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 13:14:04 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 13:14:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:269
+ERROR - 2025-03-09 13:14:09 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 13:20:03 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 13:20:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 13:26:03 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 13:26:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 13:32:03 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 13:32:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 13:38:03 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 13:38:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 13:43:04 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 13:43:08 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 13:49:04 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 13:49:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 13:55:03 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 13:55:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 14:00:06 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 14:00:10 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 14:06:04 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 14:06:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 14:12:03 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 14:12:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 14:18:03 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 14:18:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 14:24:03 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 14:24:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 14:30:03 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 14:30:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 14:35:04 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 14:35:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 14:41:03 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 14:41:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 14:47:04 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 14:47:08 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 14:53:03 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 14:53:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 14:59:03 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 14:59:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 15:05:03 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 15:05:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 15:10:03 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 15:10:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 15:16:03 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 15:16:06 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 15:21:04 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 15:21:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 15:27:03 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 15:27:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 15:32:03 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 15:32:08 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:269
+ERROR - 2025-03-09 15:32:10 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 15:38:03 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 15:38:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 15:44:03 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 15:44:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 15:49:05 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 15:49:09 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 15:55:03 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 15:55:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 16:00:05 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 16:00:08 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 16:06:03 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 16:06:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 16:12:03 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 16:12:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 16:18:02 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 16:18:06 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 16:23:03 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 16:23:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 16:29:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 16:29:11 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 16:35:03 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 16:35:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 16:40:04 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 16:40:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 16:46:04 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 16:46:08 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:269
+ERROR - 2025-03-09 16:46:09 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 16:52:04 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 16:52:09 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 16:58:03 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 16:58:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 17:04:03 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 17:04:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:269
+ERROR - 2025-03-09 17:04:09 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 17:10:03 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 17:10:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 17:16:04 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 17:16:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 17:22:03 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 17:22:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 17:28:03 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 17:28:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 17:33:04 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 17:33:08 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 17:39:04 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 17:39:08 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 17:45:03 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 17:45:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 17:51:04 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 17:51:08 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:269
+ERROR - 2025-03-09 17:51:09 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 17:57:04 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 17:57:08 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 18:02:04 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 18:02:08 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 18:08:02 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 18:08:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 18:13:03 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 18:13:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 18:19:04 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 18:19:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 18:25:03 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 18:25:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 18:30:04 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 18:30:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 18:36:03 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 18:36:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 18:42:03 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 18:42:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 18:48:02 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 18:48:06 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 18:53:03 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 18:53:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 18:59:05 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 18:59:08 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 19:05:04 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 19:05:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 19:11:03 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 19:11:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 19:16:03 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 19:16:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 19:22:03 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 19:22:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 19:28:03 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 19:28:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 19:33:04 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 19:33:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 19:39:03 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 19:39:06 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 19:44:04 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 19:44:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:269
+ERROR - 2025-03-09 19:44:08 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 19:50:03 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 19:50:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 19:56:03 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 19:56:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 20:02:04 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 20:02:08 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 20:08:03 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 20:08:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 20:14:03 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 20:14:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 20:19:03 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 20:19:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 20:25:03 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 20:25:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 20:31:04 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 20:31:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 20:37:03 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 20:37:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 20:42:03 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 20:42:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 20:48:03 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 20:48:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 20:54:03 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 20:54:06 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 21:00:05 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 21:00:08 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 21:06:04 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 21:06:08 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 21:11:03 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 21:11:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 21:17:03 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 21:17:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 21:23:03 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 21:23:06 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 21:28:04 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 21:28:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 21:34:03 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 21:34:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 21:40:03 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 21:40:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 21:45:04 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 21:45:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 21:51:03 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 21:51:06 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 21:57:03 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 21:57:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 22:03:03 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 22:03:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 22:09:04 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 22:09:08 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 22:15:03 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 22:15:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 22:21:09 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 22:21:15 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 22:27:03 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 22:27:08 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 22:32:04 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 22:32:08 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 22:38:03 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 22:38:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 22:43:04 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 22:43:08 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 22:49:03 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 22:49:06 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 22:55:03 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 22:55:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 23:00:05 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 23:00:09 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:269
+ERROR - 2025-03-09 23:00:10 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:269
+ERROR - 2025-03-09 23:00:11 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 23:06:04 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 23:06:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 23:12:04 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 23:12:08 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 23:17:03 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 23:17:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 23:23:03 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 23:23:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 23:28:03 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 23:28:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 23:34:03 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 23:34:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 23:40:03 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 23:40:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 23:45:03 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 23:45:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 23:51:04 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 23:51:07 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 23:57:04 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243
+ERROR - 2025-03-09 23:57:08 --> [ERROR] Undefined variable $data FCPATH/plugins/Accounting/index.php:243

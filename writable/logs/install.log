@@ -1,0 +1,2 @@
+[2024-09-14 01:07:33 UTC] php_network_getaddresses: getaddrinfo for appnaros_sistema failed: Name or service not known
+[2024-09-14 01:13:02 UTC] Access denied for user 'appnaros_sistema'@'localhost' (using password: YES)
