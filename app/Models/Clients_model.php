@@ -227,6 +227,209 @@ class Clients_model extends Crud_model
             return $raw_query;
         }
     }
+    function get_details_refactor($options = array())
+    {
+        $clients_table = $this->db->prefixTable('clients');
+        $projects_table = $this->db->prefixTable('projects');
+        $users_table = $this->db->prefixTable('users');
+        $invoices_table = $this->db->prefixTable('invoices');
+        $invoice_payments_table = $this->db->prefixTable('invoice_payments');
+        $client_groups_table = $this->db->prefixTable('client_groups');
+        $lead_status_table = $this->db->prefixTable('lead_status');
+        $estimates_table = $this->db->prefixTable('estimates');
+        $estimate_requests_table = $this->db->prefixTable('estimate_requests');
+        $tickets_table = $this->db->prefixTable('tickets');
+        $orders_table = $this->db->prefixTable('orders');
+        $proposals_table = $this->db->prefixTable('proposals');
+
+        $where = "";
+        $id = $this->_get_clean_value($options, "id");
+        if ($id) {
+            $where .= " AND $clients_table.id=$id";
+        }
+
+        $custom_field_type = "clients";
+
+        $leads_only = $this->_get_clean_value($options, "leads_only");
+        if ($leads_only) {
+            $custom_field_type = "leads";
+            $where .= " AND $clients_table.is_lead=1";
+        }
+
+        $discarded = $this->_get_clean_value($options, "discarded");
+        if ($discarded !== null) {
+            $where .= " AND $clients_table.descartado=$discarded";
+        }
+
+        $status = $this->_get_clean_value($options, "status");
+        if ($status) {
+            $where .= " AND $clients_table.lead_status_id='$status'";
+        }
+
+        $cod_cliente = $this->_get_clean_value($options, "cod_cliente");
+        if ($cod_cliente) {
+            $where .= " AND $clients_table.cod_cliente='$cod_cliente'";
+        }
+
+        $source = $this->_get_clean_value($options, "source");
+        if ($source) {
+            $where .= " AND $clients_table.lead_source_id='$source'";
+        }
+
+        $owner_id = $this->_get_clean_value($options, "owner_id");
+        if ($owner_id) {
+            $where .= " AND $clients_table.owner_id=$owner_id";
+        }
+
+        $created_by = $this->_get_clean_value($options, "created_by");
+        if ($created_by) {
+            $where .= " AND $clients_table.created_by=$created_by";
+        }
+
+        $phone = $this->_get_clean_value($options, "phone");
+        if ($phone) {
+            $where .= " AND $clients_table.phone LIKE '%$phone%'";
+        }
+
+        $show_own_clients_only_user_id = $this->_get_clean_value($options, "show_own_clients_only_user_id");
+        if ($show_own_clients_only_user_id) {
+            $where .= " AND ($clients_table.created_by=$show_own_clients_only_user_id OR $clients_table.owner_id=$show_own_clients_only_user_id)";
+        }
+
+        if (!$id && !$leads_only) {
+            //only clients
+            $where .= " AND $clients_table.is_lead=0";
+        }
+
+        $group_id = $this->_get_clean_value($options, "group_id");
+        if ($group_id) {
+            $where .= " AND FIND_IN_SET('$group_id', $clients_table.group_ids)";
+        }
+
+        $quick_filter = $this->_get_clean_value($options, "quick_filter");
+        if ($quick_filter) {
+            $where .= $this->make_quick_filter_query($quick_filter, $clients_table, $projects_table, $invoices_table, $invoice_payments_table, $estimates_table, $estimate_requests_table, $tickets_table, $orders_table, $proposals_table);
+        }
+
+        $start_date = $this->_get_clean_value($options, "start_date");
+        if ($start_date) {
+            $where .= " AND DATE($clients_table.created_date)>='$start_date'";
+        }
+        $end_date = $this->_get_clean_value($options, "end_date");
+        if ($end_date) {
+            $where .= " AND DATE($clients_table.created_date)<='$end_date'";
+        }
+
+        $label_id = $this->_get_clean_value($options, "label_id");
+        if ($label_id) {
+            $where .= " AND (FIND_IN_SET('$label_id', $clients_table.labels)) ";
+        }
+
+        $select_labels_data_query = $this->get_labels_data_query();
+
+        $client_groups = $this->_get_clean_value($options, "client_groups");
+        $where .= $this->prepare_allowed_client_groups_query($clients_table, $client_groups);
+
+        //prepare custom fild binding query
+        $custom_fields = get_array_value($options, "custom_fields");
+        $custom_field_filter = get_array_value($options, "custom_field_filter");
+        $custom_field_query_info = $this->prepare_custom_field_query_string($custom_field_type, $custom_fields, $clients_table, $custom_field_filter);
+        $select_custom_fieds = get_array_value($custom_field_query_info, "select_string");
+        $join_custom_fieds = get_array_value($custom_field_query_info, "join_string");
+        $custom_fields_where = get_array_value($custom_field_query_info, "where_string");
+
+        $this->db->query('SET SQL_BIG_SELECTS=1');
+
+        $limit_offset = "";
+        $limit = $this->_get_clean_value($options, "limit");
+        if ($limit) {
+            $skip = $this->_get_clean_value($options, "skip");
+            $offset = $skip ? $skip : 0;
+            $limit_offset = " LIMIT $limit OFFSET $offset ";
+        }
+
+
+        $available_order_by_list = array(
+            "id" => $clients_table . ".id",
+            "company_name" => $clients_table . ".company_name",
+            "created_date" => $clients_table . ".created_date",
+            "primary_contact" => $users_table . ".first_name",
+            "status" => "lead_status_title",
+            "owner_name" => "owner_details.owner_name",
+            "primary_contact" => "primary_contact",
+            "client_groups" => "client_groups"
+        );
+
+        $order_by = get_array_value($available_order_by_list, $this->_get_clean_value($options, "order_by"));
+
+        $order = "";
+
+        if ($order_by) {
+            $order_dir = $this->_get_clean_value($options, "order_dir");
+            $order = " ORDER BY $order_by $order_dir ";
+        }
+
+
+        $search_by = $this->_get_clean_value($options, "search_by");
+        if ($search_by) {
+            $search_by = $this->db->escapeLikeString($search_by);
+            $labels_table = $this->db->prefixTable("labels");
+
+            $where .= " AND (";
+            $where .= " $clients_table.id LIKE '%$search_by%' ESCAPE '!' ";
+            $where .= " OR $clients_table.company_name LIKE '%$search_by%' ESCAPE '!' ";
+            $where .= " OR $clients_table.country LIKE '%$search_by%' ESCAPE '!' ";
+            $where .= " OR $clients_table.cod_cliente LIKE '%$search_by%' ESCAPE '!' ";
+            $where .= " OR CONCAT($users_table.first_name, ' ', $users_table.last_name) LIKE '%$search_by%' ESCAPE '!' ";
+            $where .= " OR (SELECT GROUP_CONCAT($labels_table.title, ', ') FROM $labels_table WHERE FIND_IN_SET($labels_table.id, $clients_table.labels)) LIKE '%$search_by%' ESCAPE '!' ";
+
+            if ($leads_only) {
+                $where .= " OR owner_details.owner_name LIKE '%$search_by%' ESCAPE '!' ";
+                $where .= " OR $lead_status_table.title LIKE '%$search_by%' ESCAPE '!' ";
+                $where .= $this->get_custom_field_search_query($clients_table, "leads", $search_by);
+            } else {
+                $where .= $this->get_custom_field_search_query($clients_table, "clients", $search_by);
+            }
+
+            $where .= " )";
+        }
+
+
+        $sql = "SELECT SQL_CALC_FOUND_ROWS $clients_table.*, CONCAT($users_table.first_name, ' ', $users_table.last_name) AS primary_contact, $users_table.id AS primary_contact_id, $users_table.image AS contact_avatar,  project_table.total_projects, IFNULL(invoice_details.payment_received,0) AS payment_received $select_custom_fieds,
+                IFNULL(invoice_details.invoice_value,0) AS invoice_value,
+                (SELECT $users_table.phone FROM $users_table WHERE $users_table.client_id = $clients_table.id AND $users_table.deleted=0 AND $users_table.is_primary_contact=1) AS primary_contact_phone,
+                (SELECT GROUP_CONCAT($client_groups_table.title) FROM $client_groups_table WHERE FIND_IN_SET($client_groups_table.id, $clients_table.group_ids)) AS client_groups, $lead_status_table.title AS lead_status_title,  $lead_status_table.color AS lead_status_color,
+                owner_details.owner_name, owner_details.owner_avatar, $select_labels_data_query
+        FROM $clients_table
+        LEFT JOIN $users_table ON $users_table.client_id = $clients_table.id AND $users_table.deleted=0 AND $users_table.is_primary_contact=1 
+        LEFT JOIN (SELECT client_id, COUNT(id) AS total_projects FROM $projects_table WHERE deleted=0 AND project_type='client_project' GROUP BY client_id) AS project_table ON project_table.client_id= $clients_table.id
+        
+        LEFT JOIN (SELECT client_id, SUM(payments_table.payment_received) as payment_received, SUM($invoices_table.invoice_total) AS invoice_value FROM $invoices_table
+                   LEFT JOIN (SELECT invoice_id, SUM(amount) AS payment_received FROM $invoice_payments_table WHERE deleted=0 GROUP BY invoice_id) AS payments_table ON payments_table.invoice_id=$invoices_table.id AND $invoices_table.deleted=0 AND $invoices_table.status='not_paid'
+                   WHERE $invoices_table.deleted=0 AND $invoices_table.status='not_paid'
+                   GROUP BY $invoices_table.client_id    
+                   ) AS invoice_details ON invoice_details.client_id= $clients_table.id 
+                       
+        LEFT JOIN $lead_status_table ON $clients_table.lead_status_id = $lead_status_table.id 
+        LEFT JOIN (SELECT $users_table.id, CONCAT($users_table.first_name, ' ', $users_table.last_name) AS owner_name, $users_table.image AS owner_avatar FROM $users_table WHERE $users_table.deleted=0 AND $users_table.user_type='staff') AS owner_details ON owner_details.id=$clients_table.owner_id
+        $join_custom_fieds               
+        WHERE $clients_table.deleted=0 $where $custom_fields_where  
+        $order $limit_offset";
+
+        $raw_query = $this->db->query($sql);
+
+        $total_rows = $this->db->query("SELECT FOUND_ROWS() as found_rows")->getRow();
+
+        if ($limit) {
+            return array(
+                "data" => $raw_query->getResult(),
+                "recordsTotal" => $total_rows->found_rows,
+                "recordsFiltered" => $total_rows->found_rows,
+            );
+        } else {
+            return $raw_query;
+        }
+    }
 
     private function make_quick_filter_query($filter, $clients_table, $projects_table, $invoices_table, $invoice_payments_table, $estimates_table, $estimate_requests_table, $tickets_table, $orders_table, $proposals_table)
     {

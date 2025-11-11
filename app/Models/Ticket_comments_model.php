@@ -88,4 +88,42 @@ class Ticket_comments_model extends Crud_model
 
         return $this->db->query($sql);
     }
+
+      function get_details_refactor($options = array())
+    {
+        $tickets_table = $this->db->prefixTable('tickets');
+        $ticket_comments_table = $this->db->prefixTable('ticket_comments');
+        $users_table = $this->db->prefixTable('users');
+        $where = "";
+        $sort = "ASC";
+
+        $id = $this->_get_clean_value($options, "id");
+        if ($id) {
+            $where .= " AND $ticket_comments_table.id=$id";
+        }
+
+        $ticket_id = $this->_get_clean_value($options, "ticket_id");
+        if ($ticket_id) {
+            $where .= " AND $ticket_comments_table.ticket_id=$ticket_id";
+        }
+
+        $sort_decending = $this->_get_clean_value($options, "sort_as_decending");
+        if ($sort_decending) {
+            $sort = "DESC";
+        }
+
+        $is_note = $this->_get_clean_value($options, "is_note");
+        if (!is_null($is_note)) {
+            $where .= " AND $ticket_comments_table.is_note=$is_note";
+        }
+
+        $sql = "SELECT $ticket_comments_table.id, CONCAT($users_table.first_name, ' ',$users_table.last_name) AS created_by_user, $ticket_comments_table.created_at, $ticket_comments_table.description
+        FROM $ticket_comments_table
+        LEFT JOIN $users_table ON $users_table.id= $ticket_comments_table.created_by
+        LEFT JOIN $tickets_table ON $tickets_table.id= $ticket_comments_table.ticket_id
+        WHERE $ticket_comments_table.deleted=0 $where
+        ORDER BY $ticket_comments_table.created_at $sort";
+
+        return $this->db->query($sql);
+    }
 }

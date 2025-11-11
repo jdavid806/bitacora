@@ -102,8 +102,7 @@ if (!function_exists('get_file_icon')) {
                 break;
             default:
                 return "file";
-        }
-        ;
+        };
     }
 }
 
@@ -238,6 +237,121 @@ if (!function_exists('upload_file_to_temp')) {
                 $target_file = $target_path . $file_name;
                 copy($temp_file, $target_file);
             }
+        }
+    }
+}
+
+if (!function_exists('upload_file_to_temp_bulk')) {
+
+    if (!function_exists('upload_file_to_temp_bulk')) {
+
+        function upload_file_to_temp_bulk()
+        {
+            if (!empty($_FILES)) {
+                $files = get_array_value($_FILES, "file");
+
+                if (!$files) {
+                    die("Invalid files");
+                }
+
+                // return $files;
+
+                // Verificar si es un array múltiple de archivos (con file[])
+                if (isset($files['name']) && is_array($files['name'])) {
+                    $file_count = count($files['name']);
+
+                    for ($i = 0; $i < $file_count; $i++) {
+                        // Verificar que no haya errores en la subida
+                        if ($files['error'][$i] !== UPLOAD_ERR_OK) {
+                            continue; // Saltar archivo con error
+                        }
+
+                        $temp_file = $files['tmp_name'][$i];
+                        $file_name = $files['name'][$i];
+                        $file_size = $files['size'][$i];
+
+                        if (!is_valid_file_to_upload($file_name)) {
+                            continue; // Saltar archivo no válido
+                        }
+
+                        // Procesar cada archivo según el sistema de almacenamiento
+                        if (defined('PLUGIN_CUSTOM_STORAGE')) {
+                            try {
+                                app_hooks()->do_action('app_hook_upload_file_to_temp', array(
+                                    "temp_file" => $temp_file,
+                                    "file_name" => $file_name,
+                                    "file_size" => $file_size
+                                ));
+                            } catch (\Exception $ex) {
+                                log_message('error', '[ERROR] {exception}', ['exception' => $ex]);
+                            }
+                        } else if (get_setting("enable_google_drive_api_to_upload_file") && get_setting("google_drive_authorized")) {
+                            $google = new Google();
+                            $google->upload_file($temp_file, $file_name, "temp", "", $file_size);
+                        } else {
+                            $temp_file_path = get_setting("temp_file_path");
+                            $target_path = getcwd() . '/' . $temp_file_path;
+                            if (!is_dir($target_path)) {
+                                if (!mkdir($target_path, 0755, true)) {
+                                    die('Failed to create file folders.');
+                                }
+                            }
+                            $unique_name = $i . '_' . time() . '_' . $file_name;
+                            $target_file = $target_path . $unique_name;
+
+                            // Verificar si el archivo temporal existe antes de copiar
+                            if (file_exists($temp_file)) {
+                                copy($temp_file, $target_file);
+                            }
+                        }
+                    }
+                } else {
+                    // Manejo para un solo archivo (cuando se usa file sin corchetes)
+                    if ($files['error'] !== UPLOAD_ERR_OK) {
+                        return false;
+                    }
+
+                    $temp_file = $files['tmp_name'];
+                    $file_name = $files['name'];
+                    $file_size = $files['size'];
+
+                    if (!is_valid_file_to_upload($file_name)) {
+                        return false;
+                    }
+
+                    if (defined('PLUGIN_CUSTOM_STORAGE')) {
+                        try {
+                            app_hooks()->do_action('app_hook_upload_file_to_temp', array(
+                                "temp_file" => $temp_file,
+                                "file_name" => $file_name,
+                                "file_size" => $file_size
+                            ));
+                        } catch (\Exception $ex) {
+                            log_message('error', '[ERROR] {exception}', ['exception' => $ex]);
+                        }
+                    } else if (get_setting("enable_google_drive_api_to_upload_file") && get_setting("google_drive_authorized")) {
+                        $google = new Google();
+                        $google->upload_file($temp_file, $file_name, "temp", "", $file_size);
+                    } else {
+                        $temp_file_path = get_setting("temp_file_path");
+                        $target_path = getcwd() . '/' . $temp_file_path;
+                        if (!is_dir($target_path)) {
+                            if (!mkdir($target_path, 0755, true)) {
+                                die('Failed to create file folders.');
+                            }
+                        }
+                        $target_file = $target_path . $file_name;
+
+                        if (file_exists($temp_file)) {
+                            copy($temp_file, $target_file);
+                        }
+                    }
+                }
+
+                return true; // Indicar que el proceso terminó
+            }
+
+            return false; // No había archivos
         }
     }
 }

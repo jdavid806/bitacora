@@ -32,4 +32,24 @@ class Ticket_types_model extends Crud_model
         WHERE $ticket_types_table.deleted=0 $where";
         return $this->db->query($sql);
     }
+
+    function get_details_copy($options = array())
+    {
+        $ticket_types_table = $this->db->prefixTable('ticket_types');
+        $where = "";
+        $id = $this->_get_clean_value($options, "id");
+        if ($id) {
+            $where = " AND $ticket_types_table.id=$id";
+        }
+
+        $title = $this->_get_clean_value($options, "title");
+        if ($title) {
+            $where .= " AND $ticket_types_table.title LIKE '%$title%'";
+        }
+
+        $sql = "SELECT $ticket_types_table.*
+        FROM $ticket_types_table
+        WHERE $ticket_types_table.deleted>=0 $where";
+        return $this->db->query($sql);
+    }
 }

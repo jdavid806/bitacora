@@ -542,13 +542,47 @@ class Public_routes extends App_Controller
         foreach ($info_ticket as $ticket) {
             $labelsListParts = explode("--::--", $ticket->labels_list);
             $ticket->labels_list = $labelsListParts[1] ?? '';
-            $ticket->tasks = $this->Tasks_model->get_details(["ticket_id" => $ticket->id])->getResult();
+            $ticket->tasks = $this->Tasks_model->get_details_refactor(["ticket_id" => $ticket->id])->getResult();
             foreach ($ticket->tasks as $task) {
-                $task->comments = $this->Project_comments_model->get_details(["task_id" => $task->id])->getRow();
+                $task->comments = $this->Project_comments_model->get_details_refactor(["task_id" => $task->id])->getRow();
             }
         }
         header('Content-Type: application/json');
         echo json_encode($info_ticket, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE);
+        exit();
+    }
+    public function search_ticket_by_cod($cod_cliente)
+    {
+
+        $info_client = $this->Clients_model->get_details_refactor(["cod_cliente" => $cod_cliente])->getRow();
+        $info_ticket = $this->Tickets_model->get_details_refactor(["client_id" => $info_client->id])->getResult();
+        foreach ($info_ticket as $ticket) {
+            $labelsListParts = explode("--::--", $ticket->labels_list);
+            $ticket->labels_list = $labelsListParts[1] ?? '';
+            $ticket->tasks = $this->Tasks_model->get_details_refactor(["ticket_id" => $ticket->id])->getResult();
+            foreach ($ticket->tasks as $task) {
+                $task->comments = $this->Project_comments_model->get_details_refactor(["task_id" => $task->id])->getRow();
+            }
+        }
+        header('Content-Type: application/json');
+        echo json_encode($info_ticket, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE);
+        exit();
+    }
+    public function search_client_by_cod($cod_cliente)
+    {
+
+        $info_client = $this->Clients_model->get_details_refactor(["cod_cliente" => $cod_cliente])->getRow();
+        // $info_ticket = $this->Tickets_model->get_details_refactor(["client_id" => $info_client->id])->getResult();
+        // foreach ($info_ticket as $ticket) {
+        //     $labelsListParts = explode("--::--", $ticket->labels_list);
+        //     $ticket->labels_list = $labelsListParts[1] ?? '';
+        //     $ticket->tasks = $this->Tasks_model->get_details_refactor(["ticket_id" => $ticket->id])->getResult();
+        //     foreach ($ticket->tasks as $task) {
+        //         $task->comments = $this->Project_comments_model->get_details_refactor(["task_id" => $task->id])->getRow();
+        //     }
+        // }
+        header('Content-Type: application/json');
+        echo json_encode($info_client, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE);
         exit();
     }
 
@@ -556,15 +590,48 @@ class Public_routes extends App_Controller
     {
 
         $info_client = $this->Clients_model->get_details(["phone" => $phone])->getRow();
-        $info_tickets = $this->Tickets_model->get_details(["client_id" => $info_client->id])->getResult();
+        $info_tickets = $this->Tickets_model->get_details_refactor(["client_id" => $info_client->id])->getResult();
         $tasks_by_ticket = [];
 
         foreach ($info_tickets as $ticket) {
-            $tasks_by_ticket = $this->Tasks_model->get_details(["ticket_id" => $ticket->id])->getResult();
+            $tasks_by_ticket = $this->Tasks_model->get_details_refactor(["ticket_id" => $ticket->id])->getResult();
         }
 
         header('Content-Type: application/json');
         echo json_encode($tasks_by_ticket, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE);
+        exit();
+    }
+    public function search_task_by_ticket($ticket)
+    {
+
+        // $info_client = $this->Clients_model->get_details(["phone" => $phone])->getRow();
+        $info_tickets = $this->Tickets_model->get_details_refactor(["id" => $ticket])->getResult();
+        $tasks_by_ticket = [];
+
+        foreach ($info_tickets as $ticket) {
+            $tasks_by_ticket = $this->Tasks_model->get_details_refactor(["ticket_id" => $ticket->id])->getResult();
+        }
+
+        header('Content-Type: application/json');
+        echo json_encode($tasks_by_ticket, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE);
+        exit();
+    }
+    public function search_task_by_id($task)
+    {
+
+        // $info_client = $this->Clients_model->get_details(["phone" => $phone])->getRow();
+        // $info_tickets = $this->Tickets_model->get_details_refactor(["id" => $ticket])->getResult();
+        // $tasks_by_ticket = [];
+
+        // foreach ($info_tickets as $ticket) {
+        $tasks = $this->Tasks_model->get_details_refactor(["id" => $task])->getResult();
+        // }
+        foreach ($tasks as $task) {
+            $task->comments = $this->Project_comments_model->get_details_refactor(["task_id" => $task->id])->getResult();
+        }
+
+        header('Content-Type: application/json');
+        echo json_encode($tasks, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE);
         exit();
     }
 
@@ -582,14 +649,16 @@ class Public_routes extends App_Controller
         $info_client->join_date = $clients->created_date;
         $info_client->country = $clients->country;
         $info_client->specialty = $clients->especialidad;
-        $info_client->info_tickets = $this->Tickets_model->get_details(["client_id" => $clients->id])->getResult();
+        $info_client->info_tickets = $this->Tickets_model->get_details_refactor(["client_id" => $clients->id])->getResult();
 
         if (count($info_client->info_tickets) > 0) {
             foreach ($info_client->info_tickets as $ticket) {
-                $ticket->ticket_comments = $this->Ticket_comments_model->get_details(["ticket_id" => $ticket->id])->getResult();
-                $ticket->tasks = $this->Tasks_model->get_details(["ticket_id" => $ticket->id])->getResult();
+                $labelsListParts = explode("--::--", $ticket->labels_list);
+                $ticket->labels_list = $labelsListParts[1] ?? '';
+                $ticket->ticket_comments = $this->Ticket_comments_model->get_details_refactor(["ticket_id" => $ticket->id])->getResult();
+                $ticket->tasks = $this->Tasks_model->get_details_refactor(["ticket_id" => $ticket->id])->getResult();
                 foreach ($ticket->tasks as $task) {
-                    $task->comments = $this->Project_comments_model->get_details(["task_id" => $task->id])->getResult();
+                    $task->comments = $this->Project_comments_model->get_details_refactor(["task_id" => $task->id])->getResult();
                 }
             }
         } else {
@@ -601,38 +670,202 @@ class Public_routes extends App_Controller
         exit();
     }
 
-    public function create_ticket_and_task()
+    public function search_ticket_by_phone_classified($phone)
     {
+        $clients = $this->Clients_model->get_all_clients(["phone" => $phone])->getRow();
+
+        $info_client = new stdClass;
+        $info_client->client_id = $clients->id;
+        $info_client->full_name = $clients->company_name;
+        $info_client->cod_client = $clients->cod_cliente;
+        $info_client->email = $clients->email;
+        $info_client->join_date = $clients->created_date;
+        $info_client->country = $clients->country;
+        $info_client->specialty = $clients->especialidad;
+
+        $info_client->info_tickets = new stdClass;
+
+        // Tickets abiertos
+        $tickets_open = $this->Tickets_model->get_details_reduced([
+            "client_id" => $clients->id,
+            "status" => "open"
+        ])->getResult();
+
+        if (count($tickets_open) > 0) {
+            foreach ($tickets_open as $ticket) {
+                $labelsListParts = explode("--::--", $ticket->labels_list);
+                $ticket->labels_list = $labelsListParts[1] ?? '';
+
+                $ticket->ticket_comments = $this->Ticket_comments_model->get_details_refactor([
+                    "ticket_id" => $ticket->id
+                ])->getResult();
+
+                $ticket->tasks = $this->Tasks_model->get_details_reduced([
+                    "ticket_id" => $ticket->id
+                ])->getResult();
+
+                foreach ($ticket->tasks as $task) {
+                    $task->comments = $this->Project_comments_model->get_details_refactor([
+                        "task_id" => $task->id
+                    ])->getResult();
+                }
+            }
+            $info_client->info_tickets->tickets_open = $tickets_open;
+        } else {
+            $info_client->info_tickets->tickets_open = app_lang("clients_without_tickets");
+        }
+
+        // Tickets cerrados
+        $tickets_closed = $this->Tickets_model->get_details_reduced([
+            "client_id" => $clients->id,
+            "status" => "closed"
+        ])->getResult();
+
+        if (count($tickets_closed) > 0) {
+            foreach ($tickets_closed as $ticket) {
+                $labelsListParts = explode("--::--", $ticket->labels_list);
+                $ticket->labels_list = $labelsListParts[1] ?? '';
+
+                $ticket->ticket_comments = $this->Ticket_comments_model->get_details_refactor([
+                    "ticket_id" => $ticket->id
+                ])->getResult();
+
+                $ticket->tasks = $this->Tasks_model->get_details_reduced([
+                    "ticket_id" => $ticket->id
+                ])->getResult();
+
+                foreach ($ticket->tasks as $task) {
+                    $task->comments = $this->Project_comments_model->get_details_refactor([
+                        "task_id" => $task->id
+                    ])->getResult();
+                }
+            }
+            $info_client->info_tickets->tickets_closed = $tickets_closed;
+        } else {
+            $info_client->info_tickets->tickets_closed = app_lang("clients_without_closed_tickets");
+        }
 
         header('Content-Type: application/json');
+        echo json_encode($info_client, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE);
+        exit();
+    }
 
+    public function search_tickets_open_by_phone($phone)
+    {
+        $clients = $this->Clients_model->get_all_clients(["phone" => $phone])->getRow();
+
+        $info_client = new stdClass;
+        $info_client->client_id = $clients->id;
+        $info_client->full_name = $clients->company_name;
+        $info_client->cod_client = $clients->cod_cliente;
+        $info_client->email = $clients->email;
+        $info_client->join_date = $clients->created_date;
+        $info_client->country = $clients->country;
+        $info_client->specialty = $clients->especialidad;
+
+        $info_client->info_tickets = new stdClass;
+
+        // Tickets abiertos
+        $tickets_open = $this->Tickets_model->get_details_reduced([
+            "client_id" => $clients->id,
+            "status" => "open"
+        ])->getResult();
+
+        if (count($tickets_open) > 0) {
+            foreach ($tickets_open as $ticket) {
+                $labelsListParts = explode("--::--", $ticket->labels_list);
+                $ticket->labels_list = $labelsListParts[1] ?? '';
+
+                $ticket->ticket_comments = $this->Ticket_comments_model->get_details_refactor([
+                    "ticket_id" => $ticket->id
+                ])->getResult();
+
+                $ticket->tasks = $this->Tasks_model->get_details_reduced([
+                    "ticket_id" => $ticket->id
+                ])->getResult();
+
+                foreach ($ticket->tasks as $task) {
+                    $task->comments = $this->Project_comments_model->get_details_refactor([
+                        "task_id" => $task->id
+                    ])->getResult();
+                }
+            }
+            $info_client->info_tickets->tickets_open = $tickets_open;
+        } else {
+            $info_client->info_tickets->tickets_open = app_lang("clients_without_tickets");
+        }
+
+        header('Content-Type: application/json');
+        echo json_encode($info_client, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE);
+        exit();
+    }
+
+
+    public function create_ticket_and_task()
+    {
+        header('Content-Type: application/json');
         $input = json_decode(file_get_contents('php://input'), true);
 
         if (empty($input['ticket']) || empty($input['task'])) {
-            echo json_encode(['status' => 'error', 'message' => 'Se requieren los parámetros "ticket" y "task".']);
+            echo json_encode(['status' => 'error', 'message' => 'Se requieren los parametros "ticket" y "task".']);
             http_response_code(400);
-            return;
+            exit();
         }
 
         date_default_timezone_set('America/Bogota');
 
+        // Validar y obtener información del cliente
         $info_client = $this->Clients_model->get_details(["phone" => $input["ticket"]["phone_client"]])->getRow();
-        $info_project = $this->Projects_model->get_details(["title" => $input["ticket"]["project_title"]])->getRow();
-        $info_ticket_type = $this->Ticket_types_model->get_details(["title" => $input["ticket"]["ticket_type_title"]])->getRow();
-        $info_user_requested = $this->Users_model->get_details(["phone" => $input["ticket"]["requested_phone"]])->getRow();
-        $info_user_assigned = $this->Users_model->get_details(["phone" => $input["ticket"]["assigned_phone"]])->getRow();
+        if (!$info_client) {
+            echo json_encode(['status' => 'error', 'message' => 'No se encontro el cliente con el telefono: ' . $input["ticket"]["phone_client"]]);
+            http_response_code(404);
+            exit();
+        }
 
+        // Validar y obtener información del proyecto
+        $info_project = $this->Projects_model->get_details_copy(["id" => (int) $input["ticket"]["project_id"]])->getRow();
+        if (!$info_project) {
+            echo json_encode(['status' => 'error', 'message' => 'No se encontro el proyecto con el titulo: ' . $input["ticket"]["project_title"]]);
+            http_response_code(404);
+            exit();
+        }
+
+        // Validar y obtener información del tipo de ticket
+        // $info_ticket_type = $this->Ticket_types_model->get_details_copy(["title" => $input["ticket"]["ticket_type_title"]])->getRow();
+        // if (!$info_ticket_type) {
+        //     echo json_encode(['status' => 'error', 'message' => 'No se encontro el tipo de ticket con el titulo: ' . $input["ticket"]["ticket_type_title"]]);
+        //     http_response_code(404);
+        //     exit();
+        // }
+
+        // Validar y obtener información del usuario solicitante
+        $info_user_requested = $this->Users_model->get_details_copy(["phone" => $input["ticket"]["requested_phone"]])->getRow();
+        if (!$info_user_requested) {
+            echo json_encode(['status' => 'error', 'message' => 'No se encontro el usuario solicitante con el telefono: ' . $input["ticket"]["requested_phone"]]);
+            http_response_code(404);
+            exit();
+        }
+
+        // Validar y obtener información del usuario asignado
+        // $info_user_assigned = $this->Users_model->get_details_copy(["phone" => $input["ticket"]["assigned_phone"]])->getRow();
+        // if (!$info_user_assigned) {
+        //     echo json_encode(['status' => 'error', 'message' => 'No se encontro el usuario asignado con el telefono: ' . $input["ticket"]["assigned_phone"]]);
+        //     http_response_code(404);
+        //     exit();
+        // }
+
+        // Si todas las validaciones pasan, crear el ticket y la tarea
         $data_ticket = [
             "client_id" => $info_client->id,
             "project_id" => (int) $info_project->id,
-            "ticket_type_id" => (int) $info_ticket_type->id,
+            // "ticket_type_id" => (int) $info_ticket_type->id,
             "title" => $input["ticket"]["title"],
             "created_by" => (int) $info_user_requested->id,
             "requested_by" => (int) $info_user_requested->id,
             "created_at" => date('Y-m-d H:i:s'),
             "status" => "new",
             "last_activity_at" => date('Y-m-d H:i:s'),
-            "assigned_to" => (int) $info_user_assigned->id
+            // "assigned_to" => (int) $info_user_assigned->id
         ];
 
         $id_ticket = $this->Tickets_model->ci_save($data_ticket);
@@ -641,7 +874,7 @@ class Public_routes extends App_Controller
             "title" => $input["task"]["title"],
             "description" => $input["task"]["description"],
             "project_id" => (int) $info_project->id,
-            "assigned_to" => (int) $info_user_assigned->id,
+            // "assigned_to" => (int) $info_user_assigned->id,
             "status_id" => 1,
             "status" => "to_do",
             "created_date" => date('Y-m-d'),
@@ -652,8 +885,154 @@ class Public_routes extends App_Controller
 
         $id_task = $this->Tasks_model->ci_save($data_task);
 
-        echo "id del ticket: " . $id_ticket . " id de la tarea: " . $id_task;
-        // echo var_dump($data_ticket);
+        echo json_encode([
+            'status' => 'success',
+            'message' => 'Ticket y tarea creados exitosamente',
+            'ticket_id' => $id_ticket,
+            'task_id' => $id_task
+        ]);
+        exit();
+    }
+
+    public function create_ticket_and_task_test()
+    {
+        header('Content-Type: application/json');
+
+        // Obtener datos desde FormData en lugar de JSON
+        $ticket_phone_client = $this->request->getPost('ticket_phone_client');
+        $ticket_project_id = $this->request->getPost('ticket_project_id');
+        $ticket_title = $this->request->getPost('ticket_title');
+        $ticket_requested_phone = $this->request->getPost('ticket_requested_phone');
+        $task_title = $this->request->getPost('task_title');
+        $task_description = $this->request->getPost('task_description');
+
+        if (
+            empty($ticket_phone_client) || empty($ticket_project_id) || empty($ticket_title) ||
+            empty($ticket_requested_phone) || empty($task_title) || empty($task_description)
+        ) {
+            echo json_encode(['status' => 'error', 'message' => 'Se requieren todos los parámetros: ticket_phone_client, ticket_project_id, ticket_title, ticket_requested_phone, task_title, task_description.']);
+            http_response_code(400);
+            return;
+        }
+
+        date_default_timezone_set('America/Bogota');
+
+        // Validar y obtener información del cliente
+        $info_client = $this->Clients_model->get_details(["phone" => $ticket_phone_client])->getRow();
+        if (!$info_client) {
+            echo json_encode(['status' => 'error', 'message' => 'No se encontro el cliente con el telefono: ' . $ticket_phone_client]);
+            http_response_code(404);
+            exit();
+        }
+
+        // Validar y obtener información del proyecto
+        $info_project = $this->Projects_model->get_details_copy(["id" => (int) $ticket_project_id])->getRow();
+        if (!$info_project) {
+            echo json_encode(['status' => 'error', 'message' => 'No se encontro el proyecto con el ID: ' . $ticket_project_id]);
+            http_response_code(404);
+            exit();
+        }
+
+        // Validar y obtener información del tipo de ticket
+        // $info_ticket_type = $this->Ticket_types_model->get_details_copy(["title" => $input["ticket"]["ticket_type_title"]])->getRow();
+        // if (!$info_ticket_type) {
+        //     echo json_encode(['status' => 'error', 'message' => 'No se encontro el tipo de ticket con el titulo: ' . $input["ticket"]["ticket_type_title"]]);
+        //     http_response_code(404);
+        //     exit();
+        // }
+
+        // Validar y obtener información del usuario solicitante
+        $info_user_requested = $this->Users_model->get_details_copy(["phone" => $ticket_requested_phone])->getRow();
+        if (!$info_user_requested) {
+            echo json_encode(['status' => 'error', 'message' => 'No se encontro el usuario solicitante con el telefono: ' . $ticket_requested_phone]);
+            http_response_code(404);
+            exit();
+        }
+
+        // Validar y obtener información del usuario asignado
+        // $info_user_assigned = $this->Users_model->get_details_copy(["phone" => $input["ticket"]["assigned_phone"]])->getRow();
+        // if (!$info_user_assigned) {
+        //     echo json_encode(['status' => 'error', 'message' => 'No se encontro el usuario asignado con el telefono: ' . $input["ticket"]["assigned_phone"]]);
+        //     http_response_code(404);
+        //     exit();
+        // }
+
+        $files_data = $this->save_files();
+        $files = unserialize($files_data);
+        $archivos = []; // Inicializar array vacío
+
+        foreach ($files as $file) {
+            $file_name = $file['file_name'];
+            $file_id = get_array_value($file, "file_id");
+            $service_type = get_array_value($file, "service_type");
+            $actual_file_name = remove_file_prefix($file_name);
+            $thumbnail = get_source_url_of_file($file, get_setting("timeline_file_path"), "thumbnail");
+            $url = get_source_url_of_file($file, get_setting("timeline_file_path"));
+
+            // Agregar al array
+            $archivos[] = [
+                'url' => $url,
+                'thumbnail' => $thumbnail,
+                'actual_file_name' => $actual_file_name
+            ];
+        }
+
+        // Si todas las validaciones pasan, crear el ticket y la tarea
+        $data_ticket = [
+            "client_id" => $info_client->id,
+            "project_id" => (int) $info_project->id,
+            // "ticket_type_id" => (int) $info_ticket_type->id,
+            "title" => $ticket_title,
+            "created_by" => (int) $info_user_requested->id,
+            "requested_by" => (int) $info_user_requested->id,
+            "created_at" => date('Y-m-d H:i:s'),
+            "status" => "new",
+            "last_activity_at" => date('Y-m-d H:i:s'),
+            // "assigned_to" => (int) $info_user_assigned->id
+        ];
+
+        $id_ticket = $this->Tickets_model->ci_save($data_ticket);
+
+        $data_task = [
+            "title" => $task_title,
+            "description" => $task_description,
+            "project_id" => (int) $info_project->id,
+            // "assigned_to" => (int) $info_user_assigned->id,
+            "status_id" => 1,
+            "status" => "to_do",
+            "created_date" => date('Y-m-d'),
+            "context" => "project",
+            "ticket_id" => (int) $id_ticket,
+            "created_by" => (int) $info_user_requested->id,
+        ];
+
+
+
+        $id_task = $this->Tasks_model->ci_save($data_task);
+
+
+
+        if (!empty($files_data)) {
+            $data_comment = [
+                "created_by" => $info_user_requested->id,
+                "created_at" => date('Y-m-d H:i:s'),
+                "description" => "Archivos adjuntos de la tarea",
+                "project_id" => (int) $info_project->id,
+                "task_id" => (int) $id_task,
+                "files" => $files_data
+            ];
+        }
+
+        $id_comment = $this->Project_comments_model->ci_save($data_comment);
+
+        echo json_encode([
+            'status' => 'success',
+            'message' => 'Ticket y tarea creados exitosamente',
+            'ticket_id' => $id_ticket,
+            'task_id' => $id_task,
+            'comment_id' => $id_comment
+        ]);
+        exit();
     }
 
     public function create_task()
@@ -669,15 +1048,28 @@ class Public_routes extends App_Controller
             return;
         }
 
-        $info_project = $this->Projects_model->get_details(["title" => $input["project_title"]])->getRow();
-        $info_user_requested = $this->Users_model->get_details(["phone" => $input["requested_phone"]])->getRow();
-        $info_user_assigned = $this->Users_model->get_details(["phone" => $input["assigned_phone"]])->getRow();
+        $info_project = $this->Projects_model->get_details_copy(["id" => (int) $input["project_id"]])->getRow();
+
+        if (!$info_project) {
+            echo json_encode(['status' => 'error', 'message' => 'No se encontro el proyecto con este ID: ' . $input["project_id"]]);
+            http_response_code(404);
+            exit();
+        }
+
+        $info_user_requested = $this->Users_model->get_details_copy(["phone" => $input["requested_phone"]])->getRow();
+
+        if (!$info_user_requested) {
+            echo json_encode(['status' => 'error', 'message' => 'No se encontro el usuario con este numero de telefono: ' . $input["requested_phone"]]);
+            http_response_code(404);
+            exit();
+        }
+        // $info_user_assigned = $this->Users_model->get_details_copy(["phone" => $input["assigned_phone"]])->getRow();
 
         $data_task = [
             "title" => $input["title"],
             "description" => $input["description"],
-            "project_id" => (int) $input["project_id"] ? $input["project_id"] : $info_project->id,
-            "assigned_to" => $input["assigned_phone"] !== "" ? $info_user_assigned->id : 0,
+            "project_id" => (int) $info_project->id,
+            // "assigned_to" => $input["assigned_phone"] !== "" ? $info_user_assigned->id : 0,
             "status_id" => 1,
             "status" => "to_do",
             "created_date" => date('Y-m-d'),
@@ -688,38 +1080,130 @@ class Public_routes extends App_Controller
 
         $id_task = $this->Tasks_model->ci_save($data_task);
 
+        echo json_encode(array("success" => true, 'message' => "Tarea guardada exitosamente", "id_task" => $id_task));
+        exit();
+    }
 
+    public function save_files()
+    {
+        $target_path = get_setting("timeline_file_path");
 
-        echo json_encode(array("success" => true, 'message' => app_lang('saved'), "id_task" => $id_task));
+        // PRIMERO subir a temporal
+        upload_file_to_temp_bulk();
+
+        // LUEGO usar una función diferente que SÍ procese $_FILES['file']
+        $files_data = $this->process_uploaded_files($target_path, "project_comment");
+
+        return $files_data;
+    }
+
+    private function process_uploaded_files($target_path, $related_to)
+    {
+        $files_data = array();
+
+        if (isset($_FILES['file']) && is_array($_FILES['file']['name'])) {
+            $file_count = count($_FILES['file']['name']);
+
+            for ($i = 0; $i < $file_count; $i++) {
+                if ($_FILES['file']['error'][$i] === UPLOAD_ERR_OK) {
+                    $temp_file = $_FILES['file']['tmp_name'][$i];
+                    $file_name = $_FILES['file']['name'][$i];
+                    $file_size = $_FILES['file']['size'][$i];
+
+                    $file_data = move_temp_file($file_name, $target_path, $related_to, $temp_file, "", "", false, $file_size);
+                    $files_data[] = array(
+                        "file_name" => get_array_value($file_data, "file_name"),
+                        "file_size" => $file_size,
+                        "file_id" => get_array_value($file_data, "file_id"),
+                        "service_type" => get_array_value($file_data, "service_type")
+                    );
+                }
+            }
+        }
+
+        return serialize($files_data);
     }
 
     public function create_comment_to_task()
     {
-
         header('Content-Type: application/json');
 
-        $input = json_decode(file_get_contents('php://input'), true);
+        // Obtener datos desde FormData en lugar de JSON
+        $project_id = $this->request->getPost('project_id');
+        $task_id = $this->request->getPost('task_id');
+        $commented_phone = $this->request->getPost('commented_phone');
+        $coment = $this->request->getPost('coment');
 
-        if (empty($input)) {
-            echo json_encode(['status' => 'error', 'message' => 'Se requieren los parámetros.']);
+        if (empty($project_id) || empty($task_id) || empty($commented_phone) || empty($coment)) {
+            echo json_encode(['status' => 'error', 'message' => 'Se requieren todos los parámetros: project_id, task_id, commented_phone y coment.']);
             http_response_code(400);
             return;
         }
 
-        $info_project = $this->Projects_model->get_details(["title" => $input["project_title"]])->getRow();
-        $info_user_requested = $this->Users_model->get_details(["phone" => $input["commented"]])->getRow();
+        $info_project = $this->Projects_model->get_details_copy(["id" => (int) $project_id])->getRow();
+
+        if (!$info_project) {
+            echo json_encode(['status' => 'error', 'message' => 'No se encontro el proyecto con este ID: ' . $project_id]);
+            http_response_code(404);
+            exit();
+        }
+
+        $info_user_requested = $this->Users_model->get_details_copy(["phone" => $commented_phone])->getRow();
+
+        if (!$info_user_requested) {
+            echo json_encode(['status' => 'error', 'message' => 'No se encontro el usuario con este numero de telefono: ' . $commented_phone]);
+            http_response_code(404);
+            exit();
+        }
+
+        $files_data = $this->save_files();
+        $files = unserialize($files_data);
+        $archivos = []; // Inicializar array vacío
+
+        foreach ($files as $file) {
+            $file_name = $file['file_name'];
+            $file_id = get_array_value($file, "file_id");
+            $service_type = get_array_value($file, "service_type");
+            $actual_file_name = remove_file_prefix($file_name);
+            $thumbnail = get_source_url_of_file($file, get_setting("timeline_file_path"), "thumbnail");
+            $url = get_source_url_of_file($file, get_setting("timeline_file_path"));
+
+            // Agregar al array
+            $archivos[] = [
+                'url' => $url,
+                'thumbnail' => $thumbnail,
+                'actual_file_name' => $actual_file_name
+            ];
+        }
+
+        // $files_data = [];
+
+        // foreach ($this->request->getPost('files') as $file) {
+        //     $files_data[] = $file;
+        // }
 
         $data_comment = [
             "created_by" => $info_user_requested->id,
             "created_at" => date('Y-m-d H:i:s'),
-            "description" => $input["description"],
+            "description" => $coment,
             "project_id" => (int) $info_project->id,
-            "task_id" => (int) $input["task_id"],
+            "task_id" => (int) $task_id
         ];
+
+        if (!empty($files_data)) {
+            $data_comment["files"] = $files_data;
+        }
 
         $id_comment = $this->Project_comments_model->ci_save($data_comment);
 
-        echo "Comentario publicado a la tarea: " . $input["task_id"] . " ID del comentario: " . $id_comment;
+        echo json_encode(array(
+            "success" => true,
+            'message' => "Comentario publicado a la tarea " . $task_id,
+            "ID del comentario" => $id_comment,
+            "archivos" => $archivos
+            // "archivos_guardados" => count($files_data)
+        ));
+        exit();
     }
 
     public function create_task_and_checklist()
@@ -858,10 +1342,10 @@ class Public_routes extends App_Controller
 
     public function get_tickets_open()
     {
-        $tickets = $this->Tickets_model->get_details(["statuses" => "open,client_replied,new"])->getResult();
+        $tickets = $this->Tickets_model->get_details_refactor(["statuses" => "open,client_replied,new"])->getResult();
 
         foreach ($tickets as $ticket) {
-            $ticket->tasks = $this->Tasks_model->get_details(["ticket_id" => $ticket->id])->getResult();
+            $ticket->tasks = $this->Tasks_model->get_details_refactor(["ticket_id" => $ticket->id])->getResult();
             $ticket->comments_tickets = $this->Ticket_comments_model->get_details_by_columns(["ticket_id" => $ticket->id])->getResult();
 
             foreach ($ticket->tasks as $task) {

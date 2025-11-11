@@ -424,7 +424,7 @@ class App_Controller extends Controller
                 $instance = ["instance" => "Ventas_MedicalSoft", "api_key" => "A22011EF1B9D-4A92-AA10-F22C76BDB5A1"];
                 return $instance;
             case 'SUPPORT':
-                $instance = ["instance" => "Soporte_Medical", "api_key" => "7EC138011159-4EB9-B296-6C06641AB801"];
+                $instance = ["instance" => "Soporte_Medicalsoft", "api_key" => "19C42B19-73E7-4073-80A8-97FD7740DA68"];
                 return $instance;
             case 'GLOBAL':
                 $instance = ["instance" => "", "api_key" => "oEQ0j9ft1FX43QkGLDCEM0arw"];

@@ -1,0 +1,120 @@
+ERROR - 2025-10-18 05:00:09 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): Unable to connect to ssl://app.monaros.co:465 (Connection timed out) in /var/www/erp/si002/system/Email/Email.php:1901
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/erp/si002/system/Email/Email.php(1901): fsockopen()
+#2 /var/www/erp/si002/system/Email/Email.php(1809): CodeIgniter\Email\Email->SMTPConnect()
+#3 /var/www/erp/si002/system/Email/Email.php(1694): CodeIgniter\Email\Email->sendWithSmtp()
+#4 /var/www/erp/si002/system/Email/Email.php(1589): CodeIgniter\Email\Email->spoolEmail()
+#5 /var/www/erp/si002/app/Helpers/general_helper.php(578): CodeIgniter\Email\Email->send()
+#6 /var/www/erp/si002/app/Helpers/notifications_helper.php(1045): send_app_mail()
+#7 /var/www/erp/si002/app/Models/Notifications_model.php(612): send_notification_emails()
+#8 /var/www/erp/si002/app/Controllers/Notification_processor.php(132): App\Models\Notifications_model->create_notification()
+#9 /var/www/erp/si002/system/CodeIgniter.php(933): App\Controllers\Notification_processor->create_notification()
+#10 /var/www/erp/si002/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+#11 /var/www/erp/si002/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+#12 /var/www/erp/si002/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#13 /var/www/erp/si002/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+#14 /var/www/erp/si002/index.php(140): CodeIgniter\Boot::bootWeb()
+#15 {main}
+ERROR - 2025-10-18 05:00:09 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2025-10-18 05:00:09 --> 
+ERROR - 2025-10-18 05:00:10 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): Unable to connect to ssl://app.monaros.co:465 (Connection timed out) in /var/www/erp/si002/system/Email/Email.php:1901
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/erp/si002/system/Email/Email.php(1901): fsockopen()
+#2 /var/www/erp/si002/system/Email/Email.php(1809): CodeIgniter\Email\Email->SMTPConnect()
+#3 /var/www/erp/si002/system/Email/Email.php(1694): CodeIgniter\Email\Email->sendWithSmtp()
+#4 /var/www/erp/si002/system/Email/Email.php(1589): CodeIgniter\Email\Email->spoolEmail()
+#5 /var/www/erp/si002/app/Helpers/general_helper.php(578): CodeIgniter\Email\Email->send()
+#6 /var/www/erp/si002/app/Helpers/notifications_helper.php(1045): send_app_mail()
+#7 /var/www/erp/si002/app/Models/Notifications_model.php(612): send_notification_emails()
+#8 /var/www/erp/si002/app/Controllers/Notification_processor.php(132): App\Models\Notifications_model->create_notification()
+#9 /var/www/erp/si002/system/CodeIgniter.php(933): App\Controllers\Notification_processor->create_notification()
+#10 /var/www/erp/si002/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+#11 /var/www/erp/si002/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+#12 /var/www/erp/si002/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#13 /var/www/erp/si002/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+#14 /var/www/erp/si002/index.php(140): CodeIgniter\Boot::bootWeb()
+#15 {main}
+ERROR - 2025-10-18 05:00:10 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2025-10-18 05:00:10 --> 
+ERROR - 2025-10-18 05:00:14 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): Unable to connect to ssl://app.monaros.co:465 (Connection timed out) in /var/www/erp/si002/system/Email/Email.php:1901
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/erp/si002/system/Email/Email.php(1901): fsockopen()
+#2 /var/www/erp/si002/system/Email/Email.php(1809): CodeIgniter\Email\Email->SMTPConnect()
+#3 /var/www/erp/si002/system/Email/Email.php(1694): CodeIgniter\Email\Email->sendWithSmtp()
+#4 /var/www/erp/si002/system/Email/Email.php(1589): CodeIgniter\Email\Email->spoolEmail()
+#5 /var/www/erp/si002/app/Helpers/general_helper.php(578): CodeIgniter\Email\Email->send()
+#6 /var/www/erp/si002/app/Helpers/notifications_helper.php(1045): send_app_mail()
+#7 /var/www/erp/si002/app/Models/Notifications_model.php(612): send_notification_emails()
+#8 /var/www/erp/si002/app/Controllers/Notification_processor.php(132): App\Models\Notifications_model->create_notification()
+#9 /var/www/erp/si002/system/CodeIgniter.php(933): App\Controllers\Notification_processor->create_notification()
+#10 /var/www/erp/si002/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+#11 /var/www/erp/si002/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+#12 /var/www/erp/si002/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#13 /var/www/erp/si002/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+#14 /var/www/erp/si002/index.php(140): CodeIgniter\Boot::bootWeb()
+#15 {main}
+ERROR - 2025-10-18 05:00:14 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2025-10-18 05:00:14 --> 
+ERROR - 2025-10-18 05:00:15 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): Unable to connect to ssl://app.monaros.co:465 (Connection timed out) in /var/www/erp/si002/system/Email/Email.php:1901
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/erp/si002/system/Email/Email.php(1901): fsockopen()
+#2 /var/www/erp/si002/system/Email/Email.php(1809): CodeIgniter\Email\Email->SMTPConnect()
+#3 /var/www/erp/si002/system/Email/Email.php(1694): CodeIgniter\Email\Email->sendWithSmtp()
+#4 /var/www/erp/si002/system/Email/Email.php(1589): CodeIgniter\Email\Email->spoolEmail()
+#5 /var/www/erp/si002/app/Helpers/general_helper.php(578): CodeIgniter\Email\Email->send()
+#6 /var/www/erp/si002/app/Helpers/notifications_helper.php(1045): send_app_mail()
+#7 /var/www/erp/si002/app/Models/Notifications_model.php(612): send_notification_emails()
+#8 /var/www/erp/si002/app/Controllers/Notification_processor.php(132): App\Models\Notifications_model->create_notification()
+#9 /var/www/erp/si002/system/CodeIgniter.php(933): App\Controllers\Notification_processor->create_notification()
+#10 /var/www/erp/si002/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+#11 /var/www/erp/si002/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+#12 /var/www/erp/si002/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#13 /var/www/erp/si002/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+#14 /var/www/erp/si002/index.php(140): CodeIgniter\Boot::bootWeb()
+#15 {main}
+ERROR - 2025-10-18 05:00:15 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2025-10-18 05:00:15 --> 
+ERROR - 2025-10-18 05:00:19 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): Unable to connect to ssl://app.monaros.co:465 (Connection timed out) in /var/www/erp/si002/system/Email/Email.php:1901
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/erp/si002/system/Email/Email.php(1901): fsockopen()
+#2 /var/www/erp/si002/system/Email/Email.php(1809): CodeIgniter\Email\Email->SMTPConnect()
+#3 /var/www/erp/si002/system/Email/Email.php(1694): CodeIgniter\Email\Email->sendWithSmtp()
+#4 /var/www/erp/si002/system/Email/Email.php(1589): CodeIgniter\Email\Email->spoolEmail()
+#5 /var/www/erp/si002/app/Helpers/general_helper.php(578): CodeIgniter\Email\Email->send()
+#6 /var/www/erp/si002/app/Helpers/notifications_helper.php(1045): send_app_mail()
+#7 /var/www/erp/si002/app/Models/Notifications_model.php(612): send_notification_emails()
+#8 /var/www/erp/si002/app/Controllers/Notification_processor.php(132): App\Models\Notifications_model->create_notification()
+#9 /var/www/erp/si002/system/CodeIgniter.php(933): App\Controllers\Notification_processor->create_notification()
+#10 /var/www/erp/si002/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+#11 /var/www/erp/si002/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+#12 /var/www/erp/si002/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#13 /var/www/erp/si002/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+#14 /var/www/erp/si002/index.php(140): CodeIgniter\Boot::bootWeb()
+#15 {main}
+ERROR - 2025-10-18 05:00:19 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2025-10-18 05:00:19 --> 
+ERROR - 2025-10-18 05:00:20 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): Unable to connect to ssl://app.monaros.co:465 (Connection timed out) in /var/www/erp/si002/system/Email/Email.php:1901
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/erp/si002/system/Email/Email.php(1901): fsockopen()
+#2 /var/www/erp/si002/system/Email/Email.php(1809): CodeIgniter\Email\Email->SMTPConnect()
+#3 /var/www/erp/si002/system/Email/Email.php(1694): CodeIgniter\Email\Email->sendWithSmtp()
+#4 /var/www/erp/si002/system/Email/Email.php(1589): CodeIgniter\Email\Email->spoolEmail()
+#5 /var/www/erp/si002/app/Helpers/general_helper.php(578): CodeIgniter\Email\Email->send()
+#6 /var/www/erp/si002/app/Helpers/notifications_helper.php(1045): send_app_mail()
+#7 /var/www/erp/si002/app/Models/Notifications_model.php(612): send_notification_emails()
+#8 /var/www/erp/si002/app/Controllers/Notification_processor.php(132): App\Models\Notifications_model->create_notification()
+#9 /var/www/erp/si002/system/CodeIgniter.php(933): App\Controllers\Notification_processor->create_notification()
+#10 /var/www/erp/si002/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+#11 /var/www/erp/si002/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+#12 /var/www/erp/si002/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#13 /var/www/erp/si002/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+#14 /var/www/erp/si002/index.php(140): CodeIgniter\Boot::bootWeb()
+#15 {main}
+ERROR - 2025-10-18 05:00:20 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2025-10-18 05:00:20 --> 

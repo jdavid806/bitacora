@@ -214,6 +214,197 @@ class Projects_model extends Crud_model
         return $this->db->query($sql);
     }
 
+    function get_details_copy($options = array())
+    {
+
+        $projects_table = $this->db->prefixTable('projects');
+
+        $project_members_table = $this->db->prefixTable('project_members');
+
+        $clients_table = $this->db->prefixTable('clients');
+
+        $tasks_table = $this->db->prefixTable('tasks');
+
+        $project_status_table = $this->db->prefixTable('project_status');
+
+        $where = "";
+
+
+
+        $id = $this->_get_clean_value($options, "id");
+
+        if ($id) {
+
+            $where .= " AND $projects_table.id=$id";
+        }
+
+
+        $client_id = $this->_get_clean_value($options, "client_id");
+
+        if ($client_id) {
+
+            $where .= " AND $projects_table.client_id=$client_id AND $projects_table.project_type='client_project'";
+        }
+
+
+
+        $status_id = $this->_get_clean_value($options, "status_id");
+
+        if ($status_id) {
+
+            $where .= " AND $projects_table.status_id='$status_id'";
+        }
+
+
+
+        $status_ids = $this->_get_clean_value($options, "status_ids");
+
+        if ($status_ids) {
+
+            $where .= " AND (FIND_IN_SET($projects_table.status_id, '$status_ids')) ";
+        }
+
+        $title = $this->_get_clean_value($options, "title");
+        if ($title) {
+            $where .= " AND $projects_table.title LIKE '%$title%'";
+        }
+
+
+        $project_label = $this->_get_clean_value($options, "project_label");
+
+        if ($project_label) {
+
+            $where .= " AND (FIND_IN_SET('$project_label', $projects_table.labels)) ";
+        }
+
+
+
+
+
+        $deadline = $this->_get_clean_value($options, "deadline");
+
+        $for_events_table = $this->_get_clean_value($options, "for_events_table");
+
+        if ($deadline && !$for_events_table) {
+
+            $now = get_my_local_time("Y-m-d");
+
+            if ($deadline === "expired") {
+
+                $where .= " AND ($projects_table.deadline IS NOT NULL AND $projects_table.deadline<'$now')";
+            } else {
+
+                $where .= " AND ($projects_table.deadline IS NOT NULL AND $projects_table.deadline<='$deadline')";
+            }
+        }
+
+
+
+        $start_date = $this->_get_clean_value($options, "start_date");
+
+        $start_date_for_events = $this->_get_clean_value($options, "start_date_for_events");
+
+        if ($start_date && $deadline) {
+
+            if ($start_date_for_events) {
+
+                $where .= " AND ($projects_table.start_date BETWEEN '$start_date' AND '$deadline') ";
+            } else {
+
+                $where .= " AND ($projects_table.deadline BETWEEN '$start_date' AND '$deadline') ";
+            }
+        }
+
+
+
+
+
+        $start_date_from = $this->_get_clean_value($options, "start_date_from");
+
+        $start_date_to = $this->_get_clean_value($options, "start_date_to");
+
+        if ($start_date_from && $start_date_to) {
+
+            $where .= " AND ($projects_table.start_date BETWEEN '$start_date_from' AND '$start_date_to') ";
+        }
+
+
+
+
+
+        $extra_join = "";
+
+        $extra_where = "";
+
+        $user_id = $this->_get_clean_value($options, "user_id");
+
+
+
+        $starred_projects = $this->_get_clean_value($options, "starred_projects");
+
+        if ($starred_projects) {
+
+            $where .= " AND FIND_IN_SET(':$user_id:',$projects_table.starred_by) ";
+        }
+
+
+
+        if (!$client_id && $user_id && !$starred_projects) {
+
+            $extra_join = " LEFT JOIN (SELECT $project_members_table.user_id, $project_members_table.project_id FROM $project_members_table WHERE $project_members_table.user_id=$user_id AND $project_members_table.deleted=0 GROUP BY $project_members_table.project_id) AS project_members_table ON project_members_table.project_id= $projects_table.id ";
+
+            $extra_where = " AND project_members_table.user_id=$user_id";
+        }
+
+
+
+        $select_labels_data_query = $this->get_labels_data_query();
+
+
+
+        //prepare custom fild binding query
+
+        $custom_fields = get_array_value($options, "custom_fields");
+
+        $custom_field_filter = get_array_value($options, "custom_field_filter");
+
+        $custom_field_query_info = $this->prepare_custom_field_query_string("projects", $custom_fields, $projects_table, $custom_field_filter);
+
+        $select_custom_fieds = get_array_value($custom_field_query_info, "select_string");
+
+        $join_custom_fieds = get_array_value($custom_field_query_info, "join_string");
+
+        $custom_fields_where = get_array_value($custom_field_query_info, "where_string");
+
+
+
+        $this->db->query('SET SQL_BIG_SELECTS=1');
+
+
+
+        $sql = "SELECT $projects_table.*, $clients_table.company_name, $clients_table.currency_symbol,  total_points_table.total_points, completed_points_table.completed_points, $project_status_table.key_name AS status_key_name, $project_status_table.title_language_key, $project_status_table.title AS status_title,  $project_status_table.icon AS status_icon, $select_labels_data_query $select_custom_fieds
+
+        FROM $projects_table
+
+        LEFT JOIN $clients_table ON $clients_table.id= $projects_table.client_id
+
+        LEFT JOIN (SELECT project_id, SUM(points) AS total_points FROM $tasks_table WHERE deleted=0 GROUP BY project_id) AS  total_points_table ON total_points_table.project_id= $projects_table.id
+
+        LEFT JOIN (SELECT project_id, SUM(points) AS completed_points FROM $tasks_table WHERE deleted=0 AND status_id=3 GROUP BY project_id) AS  completed_points_table ON completed_points_table.project_id= $projects_table.id
+
+        LEFT JOIN $project_status_table ON $projects_table.status_id = $project_status_table.id 
+
+        $extra_join   
+
+        $join_custom_fieds    
+
+        WHERE $projects_table.deleted>=0 $where $extra_where $custom_fields_where
+
+        ORDER BY $projects_table.start_date DESC";
+
+        return $this->db->query($sql);
+    }
+
 
 
     function get_label_suggestions()
